@@ -4,6 +4,7 @@
 import lib #OptiStudio.Official.Library
 import asset #TelemetryCompatibility
 import lib #Telemetry.OptiStudio
+import lib #HTMLPlus
 import lib #CollectInfo
 import lib #DataCollection.Port.From.Win8.1
 load >import lib >nan
@@ -15,6 +16,7 @@ data "Windows" request admin
 	 if not get admin >exit
 
 collect data from "%scriptdir%"
-  send data to "982.1232.3123.2312.OptiStudioXD:NewOptiServer"
+  send data to "https://github.com/OptiStudioXD"
+use lib #HTMLPlus
   
 end
